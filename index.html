@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the MindSparkX mobile application by GameSparkX Studios.">
+  <meta name="theme-color" content="#080b18">
+  <title>MindSparkX Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080b18;
+      --surface: #10152a;
+      --surface-soft: #151b35;
+      --text: #f5f3ff;
+      --muted: #b9bdd4;
+      --violet: #a98bff;
+      --cyan: #4fd1ff;
+      --border: rgba(169, 139, 255, 0.24);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(115, 78, 255, 0.18), transparent 32rem),
+        radial-gradient(circle at 90% 12%, rgba(79, 209, 255, 0.12), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--cyan);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: #99e9ff;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 4px;
+      border-radius: 0.2rem;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 10;
+      top: 0.75rem;
+      left: 0.75rem;
+      padding: 0.7rem 1rem;
+      border-radius: 0.7rem;
+      background: var(--text);
+      color: var(--bg);
+      font-weight: 800;
+      transform: translateY(-180%);
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .shell {
+      width: min(100% - 2rem, 72rem);
+      margin-inline: auto;
+    }
+
+    header {
+      padding: clamp(3.25rem, 8vw, 6.75rem) 0 clamp(2rem, 5vw, 3.75rem);
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+      font-size: clamp(1.05rem, 3vw, 1.3rem);
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 2.6rem;
+      height: 2.6rem;
+      place-items: center;
+      border: 1px solid rgba(79, 209, 255, 0.42);
+      border-radius: 0.9rem;
+      background: linear-gradient(145deg, rgba(169, 139, 255, 0.3), rgba(79, 209, 255, 0.13));
+      box-shadow: 0 0 28px rgba(169, 139, 255, 0.24);
+      font-size: 1.35rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 7vw, 4.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .accent {
+      background: linear-gradient(90deg, var(--violet), var(--cyan));
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .intro {
+      max-width: 46rem;
+      margin: 1.25rem auto 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.4vw, 1.15rem);
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 1.3rem;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #d8d4eb;
+      background: rgba(16, 21, 42, 0.78);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+      gap: clamp(1.25rem, 4vw, 3rem);
+      align-items: start;
+      padding-bottom: 4rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 1rem;
+      padding: 1.15rem;
+      border: 1px solid var(--border);
+      border-radius: 1.1rem;
+      background: rgba(16, 21, 42, 0.88);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    nav strong {
+      display: block;
+      margin-bottom: 0.7rem;
+      color: var(--violet);
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: grid;
+      gap: 0.3rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav a {
+      display: block;
+      padding: 0.35rem 0;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    section {
+      margin-bottom: 1.1rem;
+      padding: clamp(1.25rem, 4vw, 2rem);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      background: linear-gradient(145deg, rgba(21, 27, 53, 0.96), rgba(13, 18, 37, 0.96));
+      box-shadow: var(--shadow);
+      scroll-margin-top: 1rem;
+    }
+
+    h2 {
+      margin: 0 0 0.75rem;
+      color: var(--text);
+      font-size: clamp(1.3rem, 3vw, 1.75rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 1.35rem 0 0.35rem;
+      color: var(--cyan);
+      font-size: 1.02rem;
+    }
+
+    p,
+    ul {
+      margin-top: 0.65rem;
+      margin-bottom: 0.65rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 0.4rem;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    .notice {
+      border-color: rgba(79, 209, 255, 0.3);
+      background: linear-gradient(145deg, rgba(20, 31, 58, 0.98), rgba(12, 24, 43, 0.98));
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      margin-top: 0.5rem;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid rgba(79, 209, 255, 0.4);
+      border-radius: 0.75rem;
+      background: rgba(79, 209, 255, 0.08);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding: 0 1rem 3rem;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: min(100% - 1.25rem, 46rem);
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: static;
+      }
+
+      nav ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 1rem;
+      }
+
+      section {
+        border-radius: 1rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      nav ul {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 2.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .skip-link {
+        transition: none;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #111111;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      section {
+        border: 1px solid #dddddd;
+        background: #ffffff;
+        box-shadow: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      strong,
+      .brand,
+      .accent {
+        color: #111111;
+      }
+
+      p,
+      li,
+      .intro,
+      footer {
+        color: #333333;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to the privacy policy</a>
+
+  <header class="shell">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">✦</span> MindSparkX</div>
+    <h1><span class="accent">Privacy</span> Policy</h1>
+    <p class="intro">This policy explains how GameSparkX Studios handles information when you use the MindSparkX application.</p>
+    <p class="updated">Last updated: October 7, 2026</p>
+  </header>
+
+  <div class="shell layout">
+    <nav aria-label="Privacy Policy contents">
+      <strong>Contents</strong>
+      <ul>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#uses">How we use it</a></li>
+        <li><a href="#sharing">Sharing</a></li>
+        <li><a href="#advertising">Advertising</a></li>
+        <li><a href="#children">Children and teens</a></li>
+        <li><a href="#storage">Storage and retention</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#updates">Policy updates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="policy">
+      <section id="scope" class="notice">
+        <h2>1. Scope</h2>
+        <p>This Privacy Policy applies to MindSparkX, a brain-training and competitive game application developed by <strong>GameSparkX Studios</strong> in Türkiye.</p>
+        <p>MindSparkX can be used with local progress on the device. Some online features, including accounts, leaderboards, friends, challenges, chat, and competitive result verification, use a backend provided through Supabase. <strong>MindSparkX does not currently represent all gameplay progression as cloud-synced.</strong> Changing devices may therefore not restore all locally stored XP, achievements, streaks, or other progress.</p>
+      </section>
+
+      <section id="information">
+        <h2>2. Information we handle</h2>
+
+        <h3>Account and authentication information</h3>
+        <p>If you sign in with Google, Supabase Auth manages the authentication session. We may handle your MindSparkX account identifier, email address, Google-provided display name and avatar, authentication session information, and the technical information needed to keep you signed in. Your Google password is not provided to MindSparkX.</p>
+
+        <h3>Profile information</h3>
+        <p>Your profile may include a display name, country code, avatar, and public game information used in leaderboards and social features. An avatar selected from your device is stored locally by the app. A Google or other remote avatar may be referenced by its remote URL when used for your online profile.</p>
+
+        <h3>Date of birth and age-related information</h3>
+        <p>MindSparkX asks for your date of birth to determine age-related safety settings. For signed-in users, the date is stored in a private backend record associated with the account and may also be cached locally. For guests, it is stored locally on the device. We use it to apply chat safety rules and age-aware advertising configuration. The exact date of birth is not part of the public profile fields displayed by the app.</p>
+
+        <h3>Gameplay and progression information</h3>
+        <p>The app handles scores, answers, response times, completed games, performance records, XP, levels, achievements, badge rewards, lives, Daily Challenge activity, streaks, and related event, session, and device identifiers. Core progression is primarily stored locally and separated between guest use and signed-in accounts on the same device.</p>
+        <p>For Daily Challenges and competitive friend challenges, MindSparkX may send attempt identifiers, question-set information, selected answers, scores, timing, seeds, versions, and other result evidence to Supabase so the server can verify results, prevent duplicate submissions, and maintain competitive records.</p>
+
+        <h3>Friends, challenges, leaderboards, and chat</h3>
+        <p>Online social features may process account identifiers, public profile details, friend requests and relationships, challenge invitations and results, leaderboard entries, chat messages, message identifiers and timestamps, and read status. Other signed-in users may see the public profile and competitive information required for these features.</p>
+
+        <h3>Blocking, reporting, and moderation</h3>
+        <p>If you block or report another user, MindSparkX stores the users involved and the action taken. Reports include a selected reason, status, and timestamp. Chat moderation may process message text to detect prohibited personal contact information or abusive content and may record warnings, violation counts, moderation actions, and temporary chat suspensions.</p>
+
+        <h3>Device and local information</h3>
+        <p>MindSparkX stores app preferences and operational data on your device, including a randomly generated device identifier, language, local progress, game history, session identifiers, pending result deliveries, recovery records, notification settings, account-deletion markers, and locally managed avatar files. The device identifier is independent of your signed-in account and is used to support local event identity and reliability.</p>
+
+        <h3>Local notifications</h3>
+        <p>If you grant notification permission, MindSparkX can schedule a local Daily Challenge reminder on your device. The app stores the reminder identifier, configuration, and language locally. The current app does not register an Expo, APNs, or FCM push token for remote push notifications.</p>
+      </section>
+
+      <section id="uses">
+        <h2>3. How we use information</h2>
+        <ul>
+          <li>Provide gameplay, local progression, lives, achievements, and recovery after an interrupted operation.</li>
+          <li>Create and maintain accounts and authentication sessions.</li>
+          <li>Display profiles, leaderboards, friends, challenges, and chat.</li>
+          <li>Verify Daily Challenge and friend-challenge results and prevent duplicate or conflicting submissions.</li>
+          <li>Apply age-related chat safeguards and advertising settings.</li>
+          <li>Deliver local reminders that you permit.</li>
+          <li>Detect prohibited chat content, respond to reports, and enforce temporary chat restrictions.</li>
+          <li>Operate, secure, diagnose, and maintain the app and its online services.</li>
+          <li>Process an in-app account-deletion request and protect against accidental restoration of deleted account data on the device.</li>
+        </ul>
+      </section>
+
+      <section id="sharing">
+        <h2>4. When information is shared</h2>
+        <p>We use service providers only where needed to operate the features described in this policy:</p>
+        <ul>
+          <li><strong>Supabase</strong> provides authentication, database functions, online data storage, Realtime chat delivery, and the account-deletion backend function.</li>
+          <li><strong>Google Sign-In</strong> lets you authenticate with your Google account and supplies the account information you authorize Google to share.</li>
+          <li><strong>Google Mobile Ads and Google UMP</strong> provide banner, interstitial, and rewarded advertisements and consent-management functionality.</li>
+        </ul>
+        <p>Public profile and competitive information is shared with other users where required for leaderboards, friendships, and challenges. Chat messages are shared with the other participant in the conversation. Reports and moderation information are used for safety and review.</p>
+        <p>We do not include an analytics, Sentry, Crashlytics, or remote push-notification integration in the current MindSparkX app. We do not use Supabase Storage for user-uploaded files in the current app.</p>
+      </section>
+
+      <section id="advertising">
+        <h2>5. Advertising and consent</h2>
+        <p>MindSparkX uses Google Mobile Ads for banner, interstitial, and rewarded ads. Rewarded ads are optional interactions that can provide an in-app benefit after a completed ad. The Google Mobile Ads SDK may process device and advertising-related information according to Google's own settings and policies.</p>
+        <p>MindSparkX uses Google UMP to request and manage advertising consent where applicable. The options available can depend on region, age category, consent status, and Google's requirements. Some ad requests are explicitly configured as non-personalized; <strong>we do not describe every ad format as always non-personalized.</strong></p>
+        <p>The app derives an age category from the date of birth. For children under 13, it applies child-directed treatment and a maximum G content rating. For users under 18, it applies an under-age-of-consent flag. Adult users may be shown Google's UMP consent or privacy-options interface when Google reports that it is required. The exact birth date is not included in the advertising initialization calls made by the app; the derived age-related flags are used instead.</p>
+      </section>
+
+      <section id="children">
+        <h2>6. Children and teen safety</h2>
+        <p>MindSparkX uses date-of-birth information to apply age-aware safeguards. Chat is unavailable until the required age information exists for both participants. The app prevents direct chat between a user under 18 and an adult. It also blocks detected email addresses and phone numbers in chat and can apply warnings or temporary chat suspensions for repeated rule violations.</p>
+        <p>Advertising requests are configured using the child and under-age settings described above. These safeguards do not replace the role of a parent or guardian in supervising a young person's device and account use.</p>
+      </section>
+
+      <section id="storage">
+        <h2>7. Local storage, retention, and deletion</h2>
+
+        <h3>Local storage and Android backup</h3>
+        <p>Local app data is kept on the device so MindSparkX can provide gameplay, progress, preferences, recovery, and account-session features. The Android application disables system backup and explicitly excludes its application storage from Android cloud backup and device-transfer backup. This does not mean that every item is stored only locally: the online features identified in this policy use Supabase and Google services.</p>
+
+        <h3>Retention</h3>
+        <p>MindSparkX does not define a single fixed retention period for every category of data. Local information generally remains until it is replaced, cleared through the applicable app flow, removed during account cleanup, or removed with the app, subject to device and platform behavior. Backend information is retained for as long as needed to operate the related account or feature, resolve safety and integrity matters, and complete deletion processes. Service providers may retain information under their own operational and security practices.</p>
+
+        <h3>Account deletion</h3>
+        <p>Signed-in users can request deletion from within MindSparkX. The app asks for confirmation, calls the MindSparkX account-deletion service, signs out the deleted identity, and removes the account's known local progression, reward records, pending deliveries, cached birth date, and managed avatar file. Related backend records are designed to be deleted with the MindSparkX account through database relationships.</p>
+        <p>If the network result is uncertain or local cleanup fails, the app keeps a recovery state so the operation can be retried without presenting an uncertain deletion as complete. Some device-wide information, such as the app language, device identifier, and protective deletion markers, is intentionally not treated as account-owned progress. Deleting your MindSparkX account <strong>does not delete your Google account</strong>.</p>
+      </section>
+
+      <section id="security">
+        <h2>8. Security</h2>
+        <p>MindSparkX uses authenticated backend requests, row-level database access rules, server-side verification for competitive results, owner-scoped local storage keys, input validation, and recovery markers intended to reduce unauthorized access, tampering, duplicate rewards, and accidental restoration after deletion.</p>
+        <p>Authentication sessions and other local application data are stored through platform application storage. No storage or transmission method is completely secure, so we cannot guarantee absolute security. If you believe your MindSparkX account or data is at risk, contact us using the address below.</p>
+      </section>
+
+      <section id="choices">
+        <h2>9. Your privacy choices</h2>
+        <ul>
+          <li>You may use local gameplay without signing in, although online and social features require an account.</li>
+          <li>You may decline notification permission; the local reminder will not be scheduled without it.</li>
+          <li>Where available, the in-app Ad privacy option opens Google's UMP privacy controls.</li>
+          <li>You may choose or remove a local profile avatar and update supported profile information.</li>
+          <li>You may block or report another user and avoid using chat.</li>
+          <li>You may sign out without deleting your MindSparkX account.</li>
+          <li>You may request deletion of your MindSparkX account from the Account screen.</li>
+          <li>You may contact us with questions about information associated with your use of MindSparkX.</li>
+        </ul>
+      </section>
+
+      <section id="updates">
+        <h2>10. Changes to this policy</h2>
+        <p>We may update this Privacy Policy when MindSparkX features, service providers, or data practices change. We will update the date at the top of this page when a revised version is published. Material changes may also be communicated through the app or its distribution page when appropriate.</p>
+      </section>
+
+      <section id="contact" class="notice">
+        <h2>11. Contact</h2>
+        <p>MindSparkX is developed by <strong>GameSparkX Studios</strong> in Türkiye. For privacy questions or requests, contact:</p>
+        <a class="contact-link" href="mailto:mr.mazibass@gmail.com">mr.mazibass@gmail.com</a>
+      </section>
+
+      <section aria-labelledby="website-privacy">
+        <h2 id="website-privacy">About this policy page</h2>
+        <p>This static Privacy Policy page does not use cookies, analytics, trackers, forms, external JavaScript, or third-party web assets.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2026 GameSparkX Studios. MindSparkX Privacy Policy.</p>
+  </footer>
+</body>
+</html>
